@@ -13,6 +13,9 @@ connect.execute(
     'CREATE TABLE IF NOT EXISTS PARTICIPANTS (name TEXT, \
     email TEXT, city TEXT, country TEXT, phone TEXT)')
 
+#Ryan was Here:
+#This function takes an inputs in 6 different fields and then stores the inputted
+#data into the database while returning the user back to the homepage.
 @app.route('/join', methods=['GET', 'POST'])
 def join():
     if request.method == 'POST':
